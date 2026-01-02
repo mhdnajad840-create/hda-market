@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Shop</title>
+  <link rel="shortcut icon" href="hda-removebg-preview.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<h1 class="de"><button class="home"><a style="text-decoration: none; color: black; " href="index.html">BACK TO HOME</a></button></h1>
+<h2 style="text-align:center">Products</h2>
+<div class="search-box">
+ <span>🔍</span><input type="search" id="searchInput" placeholder="Search..." onkeyup="searchItems()">
+</div>
+<div class="grid">
+  <div class="card">
+    <img title="SHOP THIS" src="https://www.natureloc.com/image/cache/catalog/banana-chips_2-600x600.jpg">
+    <h3 title="SHOP THIS">Banana Chips</h3>
+    <p title="SHOP THIS">Crispy snack</p>
+  </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://www.shutterstock.com/image-photo/achappam-popular-deep-fried-traditional-600nw-446301634.jpg">
+    <h3 title="SHOP THIS">Achappam</h3>
+    <p title="SHOP THIS">Flavorful snack</p>
+  </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7G-KoLEc5ILPHDBbAq_4d3MA5iNEYmNKsQ&s">
+    <h3 title="SHOP THIS">Nurukku</h3>
+    <p title="SHOP THIS">broken wheat</p>
+  </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://rukminim2.flixcart.com/image/480/640/klwmufk0/snack-savourie/u/o/t/0-5-kerala-homemade-spicy-mixture-500-gm-vacuum-pack-safe-original-imagyxpestcm5kj6.jpeg?q=90">
+    <h3 title="SHOP THIS">Mixture</h3>
+    <p title="SHOP THIS">Savory snack</p>
+  </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://www.oorla.in/cdn/shop/files/Small_Onion_Murukku_2.png?v=1750249596&width=1946">
+    <h3 title="SHOP THIS">Lays nurukku</h3>
+    <p title="SHOP THIS">Spiral-shaped snack</p>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaV40o5D36eHa-qcgl8C75EyXbdoXccZXkRDC91tGqvQ&s">
+    <h3 title="SHOP THIS">Bread</h3>
+    <p>A soft, bowl-shaped pancake</p>
+  </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://southsidehabits.com/cdn/shop/files/Creambun-2-pcs.png?v=1737629187">
+    <h3 title="SHOP THIS">Cream bun</h3>
+    <p title="SHOP THIS">Deep-fried snack</p>
+  </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://www.sugarfree-india.com/images/uploads/recipe-images/sugar-free-cream-biscuits-recipe.jpg">
+    <h3 title="SHOP THIS">Cream biscuit</h3>
+    <p title="SHOP THIS">Sandwich-style snack,Quick bread</p>
+  </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhpSaa1CbpXJz6MIKl8v2_Vadu37IQjBM5C7SGcqqnKw&s">
+    <h3 title="SHOP THIS">Potato chips</h3>
+    <p title="SHOP THIS">Slicy snack</p>
+  </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpF4xEqjaxTONAsAK8B9yHpJdoTr2igelw6Iqeh5KciQ&s">
+    <h3 title="SHOP THIS">Peanut butter</h3>
+    <p title="SHOP THIS">Nutrient-dense spread</p>
+  </div>
+  
+  <div class="card">
+    <img title="SHOP THIS" src="https://www.milletmaagicmeal.in/cdn/shop/files/assorted-homemade-chocolate.jpg?v=1700753052">
+    <h3 title="SHOP THIS">Chocolate</h3>
+    <p title="SHOP THIS">Derived from the seeds of the cacao tree</p>
+    </div>
+
+  <div class="card">
+    <img title="SHOP THIS" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShwXLnKGfDYee3rjGgv_Hs6p2aZYigcnXdsNyg4rfQGA&s">
+    <h3 title="SHOP THIS">Cup cake</h3>
+    <p title="SHOP THIS">Delightful single-serving cake</p>
+    </div>
+  <div class="card">
+    <img title="SHOP THIS" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxjDEi7OtzNRRnX8auDu_cm5sDIMsOJzaHjaOIegoVg&s">
+    <h3 title="SHOP THIS">Chocolate syrup</h3>
+    <p title="SHOP THIS">Sweet syrup made from chocolate</p>
+    </div>
+    
+  <div class="card">
+    <img title="SHOP THIS" src="https://bhojmasale.com/cdn/shop/articles/mini-aloo-samosa-recipe-916475_1024x1024.jpg?v=1739153033">
+    <h3 title="SHOP THIS">Mini samoosa</h3>
+    <p title="SHOP THIS">Often called cocktail samoosa</p>
+    </div>    
+
+</div>
+<script>
+function searchItems() {
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  const cards = document.getElementsByClassName('card');
+
+  for (let i = 0; i < cards.length; i++) {
+    const title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+    if (title.includes(input)) {
+      cards[i].style.display = '';
+    } else {
+      cards[i].style.display = 'none';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
